@@ -3,5 +3,5 @@ zsh
 tigervnc
 x11-repo
 root-repo
-termux-utils
 vim
+git
