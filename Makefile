@@ -1,6 +1,7 @@
 install:
 		pkg install x11-repo root-repo
 		pkg install -y `cat pkglist`
+		pkg upgrade -y
 		[ ! -d "${HOME}/powerlevel10k" ] && \
 			git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${HOME}/powerlevel10k && \
 			echo 'source ${HOME}/powerlevel10k/powerlevel10k.zsh-theme' >> ${HOME}/.zshrc || echo "Not cloning powerlevel10k repository again"
